@@ -93,3 +93,8 @@ Membuat Aplikasi POS Barcode Inventory System
 
 ## 4. CRUD
 
+
+#### 4.1 Membuat database dan menghubungan db dgn aplikasi
+
+        modified:   README.md
+        new file:   db/konekdb.php
