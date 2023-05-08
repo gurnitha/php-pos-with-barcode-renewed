@@ -76,3 +76,9 @@ Membuat Aplikasi POS Barcode Inventory System
         new file:   ui/staf/inc/aside_main.php
         new file:   ui/staf/inc/content.php
         new file:   ui/staf/inc/navbar.php
+
+
+#### 3.6 Membuat laman register 
+
+        modified:   README.md
+        new file:   ui/admin/register.php
