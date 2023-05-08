@@ -1,3 +1,9 @@
+<!-- ui/admin/dashboard.php -->
+<?php 
+    // Connecting the db and start session
+    include_once '../../db/konekdb.php';
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 

@@ -112,3 +112,11 @@ Membuat Aplikasi POS Barcode Inventory System
         modified:   ui/admin/inc/aside_main.php
         new file:   ui/admin/logout.php
         modified:   ui/staf/inc/aside_main.php
+
+
+#### 4.4 Display nama admin yang berhasil login
+
+        modified:   README.md
+        modified:   index.php
+        modified:   ui/admin/dashboard.php
+        modified:   ui/admin/inc/aside_main.php

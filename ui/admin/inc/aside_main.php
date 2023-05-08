@@ -13,8 +13,7 @@
                     </div>
                     <div class="info">
                         <a href="#" class="d-block">
-                        <span class="right badge badge-danger">
-                        Ing                    </span>
+                        <span class="right badge badge-danger"><?php echo ucfirst($_SESSION['username']); ?></span>
                         </a>
                     </div>
                 </div>
