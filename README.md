@@ -65,3 +65,14 @@ Membuat Aplikasi POS Barcode Inventory System
 
         modified:   README.md
         new file:   ui/staf/dashboard.php
+
+
+#### 3.5 Modifikasi staf dashboard dengan template parsial
+
+        modified:   README.md
+        deleted:    ui/admin/inc/touch
+        modified:   ui/staf/dashboard.php
+        new file:   ui/staf/inc/aside_control.php
+        new file:   ui/staf/inc/aside_main.php
+        new file:   ui/staf/inc/content.php
+        new file:   ui/staf/inc/navbar.php
