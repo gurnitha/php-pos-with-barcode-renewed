@@ -25,3 +25,6 @@ Membuat Aplikasi POS Barcode Inventory System
         new file:   parsial/footer.php
         new file:   parsial/head.php
         new file:   parsial/scripts.php
+
+
+## 3. Membuat User Interface
