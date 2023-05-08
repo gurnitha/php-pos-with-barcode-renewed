@@ -47,3 +47,15 @@ Membuat Aplikasi POS Barcode Inventory System
         renamed:    parsial/footer.php -> ui/parsial/footer.php
         new file:   ui/parsial/head.php
         new file:   ui/parsial/scripts.php
+
+
+#### 3.3 Modifikasi admin dashboard dengan template parsial
+
+        modified:   README.md
+        modified:   ui/admin/dashboard.php
+        new file:   ui/admin/inc/aside_control.php
+        new file:   ui/admin/inc/aside_main.php
+        new file:   ui/admin/inc/content.php
+        new file:   ui/admin/inc/navbar.php
+        new file:   ui/admin/inc/touch
+        modified:   ui/parsial/footer.php
