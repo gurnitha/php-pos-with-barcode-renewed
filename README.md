@@ -59,3 +59,9 @@ Membuat Aplikasi POS Barcode Inventory System
         new file:   ui/admin/inc/navbar.php
         new file:   ui/admin/inc/touch
         modified:   ui/parsial/footer.php
+
+
+#### 3.4 Membuat laman dashboard untuk staf
+
+        modified:   README.md
+        new file:   ui/staf/dashboard.php
