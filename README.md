@@ -82,3 +82,10 @@ Membuat Aplikasi POS Barcode Inventory System
 
         modified:   README.md
         new file:   ui/admin/register.php
+
+
+#### 3.7 Modifikasi laman register dengan template parsial
+
+        modified:   README.md
+        new file:   ui/admin/parsial/content_register.php
+        modified:   ui/admin/register.php
