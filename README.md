@@ -89,3 +89,7 @@ Membuat Aplikasi POS Barcode Inventory System
         modified:   README.md
         new file:   ui/admin/parsial/content_register.php
         modified:   ui/admin/register.php
+
+
+## 4. CRUD
+
