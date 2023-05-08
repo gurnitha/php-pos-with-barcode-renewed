@@ -8,3 +8,6 @@ Membuat Aplikasi POS Barcode Inventory System
 
 
 #### 1.1 Membuat repositori di Github
+
+
+## 2. Membuat laman login
