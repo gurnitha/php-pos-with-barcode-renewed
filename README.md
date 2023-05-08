@@ -104,3 +104,11 @@ Membuat Aplikasi POS Barcode Inventory System
 
         modified:   README.md
         modified:   index.php 
+
+
+#### 4.3 Logout
+
+        modified:   README.md
+        modified:   ui/admin/inc/aside_main.php
+        new file:   ui/admin/logout.php
+        modified:   ui/staf/inc/aside_main.php
