@@ -1,14 +1,16 @@
-<!-- ui/admin/dashboard.php -->
+<!-- ui/user/dashboard.php -->
+
 <?php 
     // Connecting the db and start session
     include_once '../../db/konekdb.php';
     session_start();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>POS | Admin Dashboard</title>
+    <title>POS | Staf Dashboard</title>
     <!--=================== head ===================-->
     <?php require_once '../parsial/head.php'; ?>
     <!--=================== head ===================-->

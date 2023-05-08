@@ -12,7 +12,7 @@
                         <img src="../assets/dist/img/admin/melly.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Melly</a>
+                        <span class="right badge badge-danger"><?php echo ucfirst($_SESSION['username']); ?></span>
                     </div>
                 </div>
                 <!-- SidebarSearch Form -->

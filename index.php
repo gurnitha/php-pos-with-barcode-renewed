@@ -52,6 +52,11 @@ if(isset($_POST['btn_login'])){
             echo "Staf sukses login!";
             // Alihkan ke admin dashboard
             header('refresh: 1;ui/staf/dashboard.php');
+
+            $_SESSION['userid'] = $row['userid'];
+            $_SESSION['username'] = $row['username'];
+            $_SESSION['useremail'] = $row['useremail'];
+            $_SESSION['role'] = $row['role'];
         } 
     } 
 
