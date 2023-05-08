@@ -1,25 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>POS | Login</title>
     <!--============ head ============-->
-        <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-    <link rel="icon" type="image/x-icon" href="assets/img/g-logo.png">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="./assets/plugins/fontawesome-free/css/all.min.css">
-    <!-- icheck bootstrap -->
-    <link rel="stylesheet" href="./assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="./assets/dist/css/adminlte.min.css">
-    <!-- SweetAlert2 -->
-    <link rel="stylesheet" href="./assets/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
-    <!-- SweetAlert2 -->
-    <link rel="stylesheet" href="./assets/plugins/sweetalert2/sweetalert2.min.css">
-    <!-- Toastr -->
-    <link rel="stylesheet" href="./assets/plugins/toastr/toastr.min.css">    <!--============ head ============-->
+    <?php require_once 'parsial/head.php'; ?>
+    <!--============ head ============-->
 </head>
 <body class="hold-transition login-page">
 
@@ -34,7 +19,10 @@
             </div>
             <div class="card-body">
                 <p class="login-box-msg" style="color:#007BFF;">
-                Hari ini adalah tanggal:  08/05/2023<br>            <span style="color:#212529;">Silakan login. Semoga semakin poduktif.</span></p>
+                <?php
+                echo "Hari ini adalah tanggal:  " . date("d/m/Y") . "<br>";
+                ?>
+            <span style="color:#212529;">Silakan login. Semoga semakin poduktif.</span></p>
                 <form action="" method="post">
                     <div class="input-group mb-3">
                         <input 
@@ -91,15 +79,7 @@
     <!-- End Content -->
 
     <!--============ scripts ============-->
-        <script src="./assets/plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 4 -->
-    <script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="./assets/dist/js/adminlte.min.js"></script>
-    <!-- SweetAlert2 -->
-    <script src="./assets/plugins/sweetalert2/sweetalert2.min.js"></script>
-    <script src="./assets/plugins/sweetalert2/sweetalert2.min.js"></script>
-    <!-- Toastr -->
-    <script src="./assets/plugins/toastr/toastr.min.js"></script>     <!--============ scripts ============-->
+    <?php require_once 'parsial/scripts.php'; ?>
+    <!--============ scripts ============-->
 </body>
 </html>
