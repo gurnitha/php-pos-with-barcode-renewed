@@ -98,3 +98,9 @@ Membuat Aplikasi POS Barcode Inventory System
 
         modified:   README.md
         new file:   db/konekdb.php
+
+
+#### 4.2 READ - Read data dari tbl_user untuk login
+
+        modified:   README.md
+        modified:   index.php 

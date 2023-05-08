@@ -1,3 +1,64 @@
+<?php 
+
+// 1. Panggil db
+require_once ('db/konekdb.php'); 
+// 2. Start session
+session_start();
+
+// 3. Jika tombol login diklik,
+if(isset($_POST['btn_login'])){
+
+    // 3.1 Ambil data yang dikirim dari field login form
+    $useremail = $_POST['text_email'];
+    $password = $_POST['text_password'];
+
+    // 3.2 Testing: memastikan hasil tangkapannya
+    // echo $useremail. " ".$password;
+    // 3.3 Testing berhasil dan comment bagian ini
+
+
+    // 4. READ - Read data dari tbl_user
+    $select = $pdo->prepare("
+        SELECT * 
+        FROM tbl_user 
+        WHERE useremail='$useremail' AND userpassword='$password'");
+
+    // 4.1 Jalankan select
+    $select->execute();
+    // 4.2 Fetch hasilnya dalam bentuk asosiatif array
+    $row = $select->fetch(PDO::FETCH_ASSOC);
+
+    // 5. Jika row dalam bentuk array
+    if(is_array($row)) {
+    
+        // 5.1 Login sebagai admin
+        if($row['useremail'] == $useremail and $row['userpassword'] == $password and $row['role'] == "admin") {
+
+            // Perlihatkan message
+            echo "Admin sukses login!";
+            // Alihkan ke admin dashboard
+            header('refresh: 1;ui/admin/dashboard.php');
+        } 
+
+        // 5.2 Login sebagai staf
+        elseif ($row['useremail'] == $useremail and $row['userpassword'] == $password and $row['role'] == "user") {
+
+            // Perlihatkan message
+            echo "Staf sukses login!";
+            // Alihkan ke admin dashboard
+            header('refresh: 1;ui/staf/dashboard.php');
+        } 
+    } 
+
+    // 6. Jika email dan/atau password yang dikirim tidak sama dengan email dan password yang tersimpan di dalam db
+    else {
+
+        // Perlihatkan message
+        echo"Email atau password salah... ulangi lagi";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +94,7 @@
             <div class="card-body">
                 <p class="login-box-msg" style="color:#007BFF;">
                 <?php
-                echo "Hari ini adalah tanggal:  " . date("d/m/Y") . "<br>";
+                echo "" . date("d-m-Y") . "<br>";
                 ?>
             <span style="color:#212529;">Silakan login. Semoga semakin poduktif.</span></p>
                 <form action="" method="post">
