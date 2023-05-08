@@ -11,3 +11,9 @@ Membuat Aplikasi POS Barcode Inventory System
 
 
 ## 2. Membuat laman login
+
+
+#### 2.1 Membuat laman login dan assets
+
+        modified:   README.md
+        new file:   index.php
