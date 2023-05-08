@@ -28,3 +28,9 @@ Membuat Aplikasi POS Barcode Inventory System
 
 
 ## 3. Membuat User Interface
+
+
+#### 3.1 Membuat laman dashboard untuk admin
+
+        modified:   README.md
+        new file:   ui/admin/dashboard.php
